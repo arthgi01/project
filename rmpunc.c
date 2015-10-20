@@ -4,7 +4,7 @@
 int main(int argc, char* argv[]) {
 
    char c;
-
+/* Either way below is equivalent. They both do the same thing. */
 /*   c = getchar();
 
    while (c != EOF) {
@@ -17,7 +17,12 @@ int main(int argc, char* argv[]) {
 
 
    while ((c = getchar()) != EOF) {
-      printf("%c",c);
+      
+      if (!ispunc(c))
+         printf("%c",c);
 }
+
    return 0;
+
+
 }
